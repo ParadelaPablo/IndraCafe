@@ -1,0 +1,54 @@
+
+
+
+@keyframes rotate-scale-down-diag-1 {
+	0% {
+		-webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
+		transform: scale(1) rotate3d(1, 1, 0, 0deg);
+	}
+	50% {
+		-webkit-transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+		transform: scale(0.5) rotate3d(1, 1, 0, -180deg);
+	}
+	100% {
+		-webkit-transform: scale(1) rotate3d(1, 1, 0, -360deg);
+		transform: scale(1) rotate3d(1, 1, 0, -360deg);
+	}
+}
+.tarjetas {
+	-webkit-animation: rotate-scale-down-diag-1 0.7s linear both;
+	animation: rotate-scale-down-diag-1 0.7s linear both;
+}
+
+
+$color_1: antiquewhite;
+$color_2: purple;
+
+/*
+.bodyMenu{
+
+    display: grid;
+    grid-template-columns:;
+    position: absolute;
+}
+
+
+
+*/
+@media (min-width: 768px) {
+	#carouselExampleFade {
+		width: 70%;
+		height: 350x;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 100px;
+	}
+	.card {
+		display: inline-block;
+		margin: 10px;
+	}
+
+
+
+
+}

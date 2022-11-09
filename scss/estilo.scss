@@ -1,0 +1,164 @@
+
+@use "index";
+
+
+@use "menu";
+
+
+@use "contacto";
+
+
+@use "sobreNosotros";
+
+
+@use "sucursales";
+
+
+@use "media";
+
+$color_1: antiquewhite;
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Metamorphous', cursive;
+    background-color: burlywood;
+    background-color: #FFC280;
+
+}
+
+.hover{
+    
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.div_general{
+
+    .hover{
+        
+        div{
+
+            h1{
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                z-index: 2;
+                border: 4px solid white;
+                background: transparent;
+                opacity: 1;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.div_general{
+
+    .hover{
+        
+        div{
+
+            img{
+                height: 500px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+div {
+	h1 {
+		font-size: 3.6rem;
+		color: $color_1;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-shadow: 0 0 8px black;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+.navbar{
+
+    position: sticky;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    div{
+
+        .div{
+
+            ul{
+
+                li{
+
+                text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.navbar{
+
+    margin: 25px;
+
+    div{
+
+        span{
+
+            img{
+                
+                height: 65px;
+                width: 130px;
+                background-color: white;
+                
+            }
+        }
+    }
+}
+
+
+//footer//
+.div_redes{
+
+    a{
+
+        img{
+
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            display: inline-block;
+        }
+    }
+}
+
+h2{
+
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+
+        text-align: center;
+    }
+}
+
+.navbar{
+
+    position: sticky;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
