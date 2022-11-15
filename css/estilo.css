@@ -32,6 +32,73 @@ div div div .w-100 {
   border-radius: 0px 0px 0px 30px;
 }
 
+/*
+.tarje{
+
+
+    .col{
+
+        .card{
+
+            .card-body{
+
+
+            }
+        }
+    }
+}*/
+.mb-3 {
+  margin: 50px;
+}
+
+.btn {
+  margin-left: 50px;
+}
+
+section div div div h5 {
+  font-size: 22px;
+}
+
+div h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.imgDeSN div div .imagenDeSN {
+  width: 700px;
+  height: 450px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#borderDemo {
+  border: 9px inset #B0A778;
+  border-radius: 0px 0px 0px 30px;
+}
+
+.navbar {
+  text-align: center;
+}
+.navbar div #navbar_text ul {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 25px;
+}
+section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section div .medio {
+  display: block;
+}
+section div .div_dos_sucursal .imagen_sucursal {
+  width: 300px;
+}
+
 @keyframes rotate-scale-down-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -160,6 +227,32 @@ h2 p {
   margin-left: 15px;
   margin-right: 15px;
   cursor: pointer;
+}
+
+.footer_clean div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #4b4c4d;
+}
+.footer_clean div div a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  color: inherit;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.footer_clean div div .item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
