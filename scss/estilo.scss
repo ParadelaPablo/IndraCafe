@@ -1,4 +1,7 @@
 
+
+//Estilo//
+
 @use "index";
 
 
@@ -16,202 +19,176 @@
 
 @use "media";
 
-$color_1: antiquewhite;
+$color_1: white;
+$color_2: $color_1;
+$color_3: #4b4c4d;
+$color_4: inherit;
+$font-family_1: 'Julius Sans One', sans-serif;
+$font-family_2: 'Metamorphous', cursive;
+$background-color_1: burlywood;
+$background-color_2: #FFC280;
+$background-color_3: white;
+$background-color_4: transparent;
+$background-color_5: #fff;
 
 body {
-    font-family: 'Julius Sans One', sans-serif;
-    font-family: 'Metamorphous', cursive;
-    background-color: burlywood;
-    background-color: #FFC280;
-
+	font-family: $font-family_1;
+	font-family: $font-family_2;
+	background-color: $background-color_1;
+	background-color: $background-color_2;
 }
 
-.hover{
-    
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
+.hover {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
 }
 
-.div_general{
-
-    .hover{
-        
-        div{
-
-            h1{
+.div_general {
+	.hover{ 
+        div{ 
+            h1{ 
                 position: absolute;
-                top: 80%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                z-index: 2;
-                border: 4px solid white;
-                background: transparent;
-                opacity: 1;
-                text-align: center;
+	            top: 80%;
+	            left: 50%;
+	            transform: translate(-50%, -50%);
+	            color: $color_1;
+	            z-index: 2;
+	            border: 4px solid white;
+	            background: transparent;
+	            opacity: 1;
+	            text-align: center;
             }
         }
     }
 }
 
 .div_general{
-
     .hover{
-        
-        div{
-
-            img{
+        div{ 
+            img{ 
                 height: 500px;
-                width: 100%;
-            }
+				width: 100%;
+			}
+			div{
+                h1 {
+                    font-size: 3.6rem;
+				    color: $color_2;
+				    position: absolute;
+				    top: 40%;
+				    left: 50%;
+				    transform: translate(-50%, -50%);
+				    text-shadow: 0 0 8px black;
+				    align-items: center;
+				    justify-content: center;
+			    }
+			}
+        } 
+    } 
+} 
+        
+.navbar {
+    margin: 25px;
+    div{
+        span{
+            img{
+                height: 65px;
+	        	width: 130px;
+			    background-color: $background-color_3;
+			}   
+	    }
+    }
+} 
+
+section{
+
+    div{
+
+        h2{
+
+            text-align: center;
         }
     }
 }
 
+//footer// 
 
+.div_redes {
 
-div {
-	h1 {
-		font-size: 3.6rem;
-		color: $color_1;
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-shadow: 0 0 8px black;
-		align-items: center;
-		justify-content: center;
+	a{
+        img{ 
+            width: 40px;
+    	    height: 40px;
+			background-color: $background-color_4;
+			display: inline-block;
+		}
 	}
 }
 
 
-.navbar{
-
-    position: sticky;
-    margin-bottom: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    cursor: pointer;
-    div{
-
-        .div{
-
-            ul{
-
-                li{
-
-                text-align: center;
-                }
-            }
-        }
-    }
-}
-
-.navbar{
-
-    margin: 25px;
-
-    div{
-
-        span{
-
-            img{
-                
-                height: 65px;
-                width: 130px;
-                background-color: white;
-                
-            }
-        }
-    }
-}
-
-
-//footer//
-.div_redes{
-
-    a{
-
-        img{
-
-            width: 40px;
-            height: 40px;
-            background-color: transparent;
-            display: inline-block;
-        }
-    }
-}
-
-h2{
-
-    text-align: center;
-    margin-bottom: 40px;
-    p{
-
-        text-align: center;
-    }
-}
-
-.navbar{
-
-    position: sticky;
-    margin-bottom: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-
-
-.footer_clean{
-
-    
-
-    div{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color:#fff;
-        color:#4b4c4d;
-
-        div{
-
-
-            a{
-
-
-                font-size:24px;
-                width:40px;
-                height:40px;
-                line-height:40px;
-                display:inline-block;
-                border-radius:50%;
-                border:1px solid #ccc;
-                margin-left:20px;
-                color:inherit;
-                opacity:0.75;
-                text-align:center;
-            }
-        }
-
-
-    }
-}
-
-
-.footer_clean{
-
-    div{
-
-        div{
-
-            .item{
-                
+.footer_clean {
+	div{ 
+        div{ 
+            .item{ 
                 display: flex;
                 justify-content: center;
                 margin-bottom: 20px;
             }
+        }
+		h2 {
+			text-align: center;
+			margin-bottom: 40px;
+			p{ 
+                text-align: center;
+		    }
+	    }
+    }
+}
+
+
+.navbar {
+    position: sticky;
+	margin-bottom: 50px;
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+	div{ 
+        .div{ 
+            ul{ 
+                li{ 
+                    text-align: center;
+		            position: sticky;
+		            margin-bottom: 50px;
+		            margin-left: 15px;
+		            margin-right: 15px;
+		            cursor: pointer;
+	            }
+            }
+        }
+	}
+}
+
+.footer_clean {
+	
+    div{ margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: $background-color_5;
+	color: $color_3;
+    }
+
+    div{ 
+        a{ font-size: 24px;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 40px;
+	    display: inline-block;
+	    border-radius: 50%;
+	    border: 1px solid #ccc;
+	    margin-left: 20px;
+	    color: $color_4;
+	    opacity: 0.75;
+	    text-align: center;
         }
     }
 }

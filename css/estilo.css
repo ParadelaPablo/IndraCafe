@@ -9,13 +9,15 @@
   font-size: 40px;
 }
 
-.tarjetas {
-  display: inline-block;
+.texto_main {
+  margin-top: 60px;
+}
+.texto_main div article {
   text-align: center;
 }
 
-.card {
-  margin: 20px;
+.bajada div h2 {
+  font-size: 40px;
 }
 
 #carouselExampleFade {
@@ -27,26 +29,97 @@
   overflow: hidden;
 }
 
-div div div .w-100 {
-  border: 9px inset #B0A778;
-  border-radius: 0px 0px 0px 30px;
+.h2_de_menu {
+  text-align: center;
 }
 
-/*
-.tarje{
+/*Cards*/
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+}
 
+.title-cards {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
 
-    .col{
+.card {
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
 
-        .card{
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
 
-            .card-body{
+.card img {
+  width: 100%;
+  height: 210px;
+}
 
+.card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
 
-            }
-        }
-    }
-}*/
+.card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #7a7a7a;
+}
+
+.card .contenido-card p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card1 {
+    flex-wrap: wrap;
+  }
+  .card1 {
+    margin: 15px;
+  }
+}
+/*Fin-Cards*/
 .mb-3 {
   margin: 50px;
 }
@@ -55,18 +128,20 @@ div div div .w-100 {
   margin-left: 50px;
 }
 
+section div div {
+  text-align: center;
+}
 section div div div h5 {
   font-size: 22px;
 }
-
-div h2 {
+Nosotros div h2 {
   text-align: center;
   font-size: 35px;
 }
 
-.imgDeSN div div .imagenDeSN {
-  width: 700px;
-  height: 450px;
+.imgDeSN .ima1_sn .ima2_sn img {
+  width: 900px;
+  height: 750px;
   margin-top: 45px;
   margin-bottom: 45px;
 }
@@ -76,29 +151,83 @@ div h2 {
   border-radius: 0px 0px 0px 30px;
 }
 
-.navbar {
-  text-align: center;
-}
-.navbar div #navbar_text ul {
-  display: flex;
-  justify-content: center;
+.sec_con div .card-body {
+  display: inline-block;
 }
 
-section {
+.sec_suc {
   padding: 25px;
 }
-section div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-section div .medio {
+.sec_suc .div_suc .medio {
   display: block;
 }
-section div .div_dos_sucursal .imagen_sucursal {
+
+.div_dos_sucursal .imagen_sucursal {
+  display: none;
+}
+
+.map_suc {
   width: 300px;
 }
 
+@media (min-width: 768px) {
+  .sec_suc {
+    padding: 25px;
+    border: 0, 2cm;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 20px;
+  }
+  .sec_suc .div_suc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec_suc .div_suc .medio {
+    display: block;
+  }
+  .sec_suc .div_suc .div_dos_sucursal {
+    text-align: center;
+  }
+  .sec_suc .div_suc .div_dos_sucursal .map_suc {
+    width: 300px;
+  }
+  .sec_suc .div_suc .div_dos_sucursal .imagen_sucursal {
+    display: block;
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .sec_suc {
+    padding: 25px;
+    border: 0, 2cm;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 20px;
+  }
+  .sec_suc .div_suc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec_suc .div_suc .medio {
+    display: block;
+  }
+  .sec_suc .div_suc .div_dos_sucursal {
+    text-align: center;
+  }
+  .sec_suc .div_suc .div_dos_sucursal .map_suc {
+    text-align: center;
+    width: 300px;
+    text-align: center;
+  }
+  .sec_suc .div_suc .div_dos_sucursal .imagen_sucursal {
+    display: block;
+    width: 500px;
+    height: 300px;
+  }
+}
 @keyframes rotate-scale-down-diag-1 {
   0% {
     -webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -118,17 +247,6 @@ section div .div_dos_sucursal .imagen_sucursal {
   animation: rotate-scale-down-diag-1 0.7s linear both;
 }
 
-/*
-.bodyMenu{
-
-    display: grid;
-    grid-template-columns:;
-    position: absolute;
-}
-
-
-
-*/
 @media (min-width: 768px) {
   #carouselExampleFade {
     width: 70%;
@@ -173,10 +291,9 @@ body {
   height: 500px;
   width: 100%;
 }
-
-div h1 {
+.div_general .hover div div h1 {
   font-size: 3.6rem;
-  color: antiquewhite;
+  color: white;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -184,17 +301,6 @@ div h1 {
   text-shadow: 0 0 8px black;
   align-items: center;
   justify-content: center;
-}
-
-.navbar {
-  position: sticky;
-  margin-bottom: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.navbar div .div ul li {
-  text-align: center;
 }
 
 .navbar {
@@ -206,6 +312,10 @@ div h1 {
   background-color: white;
 }
 
+section div h2 {
+  text-align: center;
+}
+
 .div_redes a img {
   width: 40px;
   height: 40px;
@@ -213,15 +323,28 @@ div h1 {
   display: inline-block;
 }
 
-h2 {
+.footer_clean div div .item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer_clean div h2 {
   text-align: center;
   margin-bottom: 40px;
 }
-h2 p {
+.footer_clean div h2 p {
   text-align: center;
 }
 
 .navbar {
+  position: sticky;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.navbar div .div ul li {
+  text-align: center;
   position: sticky;
   margin-bottom: 50px;
   margin-left: 15px;
@@ -235,7 +358,7 @@ h2 p {
   background-color: #fff;
   color: #4b4c4d;
 }
-.footer_clean div div a {
+.footer_clean div a {
   font-size: 24px;
   width: 40px;
   height: 40px;
@@ -247,12 +370,6 @@ h2 p {
   color: inherit;
   opacity: 0.75;
   text-align: center;
-}
-
-.footer_clean div div .item {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=estilo.css.map */

@@ -1,6 +1,4 @@
 
-
-
 @keyframes rotate-scale-down-diag-1 {
 	0% {
 		-webkit-transform: scale(1) rotate3d(1, 1, 0, 0deg);
@@ -15,26 +13,14 @@
 		transform: scale(1) rotate3d(1, 1, 0, -360deg);
 	}
 }
+
+
+
 .tarjetas {
 	-webkit-animation: rotate-scale-down-diag-1 0.7s linear both;
 	animation: rotate-scale-down-diag-1 0.7s linear both;
 }
 
-
-$color_1: antiquewhite;
-$color_2: purple;
-
-/*
-.bodyMenu{
-
-    display: grid;
-    grid-template-columns:;
-    position: absolute;
-}
-
-
-
-*/
 @media (min-width: 768px) {
 	#carouselExampleFade {
 		width: 70%;
@@ -47,10 +33,4 @@ $color_2: purple;
 		display: inline-block;
 		margin: 10px;
 	}
-
-
-
-
 }
-
-
