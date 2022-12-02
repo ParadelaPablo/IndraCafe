@@ -23,19 +23,20 @@ $color_1: white;
 $color_2: $color_1;
 $color_3: #4b4c4d;
 $color_4: inherit;
-$font-family_2: 'Metamorphous', cursive;
 $font-family_1: 'Julius Sans One', sans-serif;
-$background-color_1: burlywood;
-$background-color_2: #FFC280;
+$font-family_2: 'Metamorphous', cursive;
+
 $background-color_3: white;
 $background-color_4: transparent;
 $background-color_5: #fff;
 
+
+
 body {
 	font-family: $font-family_1;
-	font-family: $font-family_2;
-	background-color: $background-color_1;
-	background-color: $background-color_2;
+
+	background: rgb(252,191,124);
+	background: linear-gradient(0deg, rgba(252,191,124,1) 0%, rgba(144,64,10,1) 100%);
 }
 
 .div_general{

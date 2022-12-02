@@ -311,9 +311,8 @@ Nosotros div h2 {
 }
 body {
   font-family: "Julius Sans One", sans-serif;
-  font-family: "Metamorphous", cursive;
-  background-color: burlywood;
-  background-color: #FFC280;
+  background: rgb(252, 191, 124);
+  background: linear-gradient(0deg, rgb(252, 191, 124) 0%, rgb(144, 64, 10) 100%);
 }
 
 .div_general .hover {
